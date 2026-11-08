@@ -29,7 +29,11 @@ BERSERK: Black Swordsman — Bannerlord Overhaul
 
 **Важно:** сборка основана на рабочей локальной конфигурации из **41 включённого модуля**, но **ещё не проверена на чистой установке**. UpgradeGuard v6 экспериментальный; устанавливайте на свой риск и создавайте резервные копии сохранений. Совместимость с другими версиями игры не гарантируется.
 
-**Техническая документация, порядок загрузки и исходники патча:** https://github.com/medvedushechka/bannerlord-berserk-black-swordsman
+**UpgradeGuard v6 — отдельный экспериментальный патч (не включён в 34 мода коллекции).** Исходники и установщик: https://github.com/medvedushechka/bannerlord-berserk-black-swordsman/tree/main/patches/UpgradeGuard_v6 . **Важно:** установщик привязан к конкретному пути игры и SHA-256 игровой DLL; на других ПК может потребоваться адаптация. Это не универсальная установка одним кликом. Не запускайте без чтения инструкции.
+
+**Известная проблема Vortex/BUTR:** при ручной установке игры, когда магазин определяется как `Unknown`, расширение BUTR 1.5.1 может пропускать DLL модов. В нашем тесте Harmony устанавливался с **0 DLL** вместо **12 DLL**. Проблема воспроизводилась в Vortex 2.10.0. Обращение: https://github.com/BUTR/game-mount-and-blade2/issues/196 . Подробности и диагностика: https://github.com/medvedushechka/bannerlord-berserk-black-swordsman/blob/main/docs/VORTEX_DLL_ISSUE_RU.md
+
+**Техническая документация и порядок загрузки:** https://github.com/medvedushechka/bannerlord-berserk-black-swordsman
 
 Сборка не является официальным продуктом TaleWorlds или создателей Berserk. Все сторонние моды принадлежат их авторам и должны загружаться из разрешённых источников.
 
@@ -48,7 +52,11 @@ BERSERK: Black Swordsman — Bannerlord Overhaul
 
 **Important:** this modpack is based on a locally working **41-enabled-module** configuration but **has not been clean-install tested**. UpgradeGuard v6 is experimental. Back up your saves and use at your own risk. Other game versions are not supported.
 
-**Documentation, exact load order and patch source:** https://github.com/medvedushechka/bannerlord-berserk-black-swordsman
+**UpgradeGuard v6 is a separate experimental patch, not included in the 34 Vortex collection mods.** Source and installer: https://github.com/medvedushechka/bannerlord-berserk-black-swordsman/tree/main/patches/UpgradeGuard_v6 . The installer is hard-coded to a specific game path and DLL SHA-256, so it is **not a universal one-click installer**. Read the instructions before attempting to use it.
+
+**Known Vortex/BUTR issue:** with manually installed games detected as `Unknown` store, BUTR extension 1.5.1 can silently omit mod DLLs. In our Harmony test, **0 DLLs** were installed without a local workaround versus **12 DLLs** with it; reproduced on Vortex 2.10.0. See https://github.com/BUTR/game-mount-and-blade2/issues/196 and troubleshooting at https://github.com/medvedushechka/bannerlord-berserk-black-swordsman/blob/main/docs/VORTEX_DLL_ISSUE_RU.md
+
+**Documentation and exact load order:** https://github.com/medvedushechka/bannerlord-berserk-black-swordsman
 
 This is an unofficial fan project, not endorsed by TaleWorlds or the creators of Berserk. Third-party mods remain the property of their respective authors and must be obtained from permitted sources.
 
@@ -71,5 +79,6 @@ This is an unofficial fan project, not endorsed by TaleWorlds or the creators of
 - Список `LauncherData.xml` показывает реальный порядок запуска, но не гарантирует, что Vortex сможет скачать все моды.
 - У `BetterBanditsPlus` и `ImprovedGarrisons` версии в папке игры и Vortex staging различаются; используйте проверенные версии из манифеста.
 - `AutoTrader` ссылается на `CargoHolds`, отсутствующий в экспортированном списке.
-- `BannerlordUpgradeGuard` — собственный экспериментальный патч; необходимо проверить способ его поставки и воспроизводимую сборку.
+- `BannerlordUpgradeGuard` — отдельный собственный экспериментальный патч, не включённый в 34 мода Vortex; необходимо проверить способ его поставки и воспроизводимую сборку.
+- [Vortex/BUTR issue #196](https://github.com/BUTR/game-mount-and-blade2/issues/196) — отдельная проблема с отсутствующими DLL при магазине `Unknown`.
 - Не загружайте в коллекцию чужие моды в обход разрешений, а в GitHub — чужие архивы, игровые DLL, личные сохранения или приватные файлы Vortex.
