@@ -1,6 +1,10 @@
-# Nexus Mods Collection — подготовка публикации
+# Nexus Mods Collection — Revision 1
 
-**Статус:** черновик. Публичной коллекции пока нет. Текущая установка Bannerlord не изменяется.
+**Статус:** Revision 1 опубликована публично (**Listed**) 8 ноября 2026 года по подтверждению автора.
+
+**Коллекция:** https://www.nexusmods.com/games/mountandblade2bannerlord/collections/u4rv0m/revisions/1
+
+**34 мода.** Патч UpgradeGuard v6 не включён. Чистая установка на другом ПК ещё не проверена.
 
 ## Название / Title
 
@@ -62,15 +66,15 @@ This is an unofficial fan project, not endorsed by TaleWorlds or the creators of
 
 ---
 
-## Создание черновика через Vortex
+## История подготовки и создания через Vortex
 
 1. Откройте Vortex, выберите **Mount & Blade II: Bannerlord** и убедитесь, что активен профиль с нашей рабочей сборкой. **Не обновляйте моды**.
 2. Перейдите **Collections → Workshop → Create a collection → From Profile**.
 3. Укажите название **BERSERK: Black Swordsman — Bannerlord Overhaul**.
 4. Откройте **Edit** и проверьте список модов. Обратите внимание на пометки **Has Problems**, **Source**, **Install Type**.
-5. Не публикуйте коллекцию до проверки источников всех модов, прав на распространение, AutoTrader → CargoHolds, корректного включения UpgradeGuard и теста установки с чистого профиля.
+5. Перед публикацией следовало проверить источники, права на распространение, AutoTrader → CargoHolds и чистую установку. **Ревизия уже опубликована, но эти проверки остаются открытыми**.
 6. После исправления проблем нажмите **Upload**, чтобы отправить черновик на Nexus, затем заполните описание и изображения на сайте. **Upload не равен Publish**.
-7. После успешного теста публикуйте первую ревизию и добавьте её URL в README.
+7. **Revision 1 опубликована как Listed**; ссылка добавлена в README. Чистая установка и совместимость на других ПК ещё требуют проверки.
 
 **Документация:** https://modding.wiki/en/nexusmods/collections/create и https://modding.wiki/en/nexusmods/collections/create/publish
 
