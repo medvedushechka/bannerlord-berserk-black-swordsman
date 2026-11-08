@@ -10,7 +10,13 @@
 
 Мрачные сражения, тяжёлое оружие, расчленение, усиленные бандиты, масштабные битвы, осады и расширенные возможности управления отрядами и королевством.
 
-> **Статус: предварительная версия.** На GitHub опубликованы документация, манифест рабочей локальной конфигурации и исходники нашего исправления UpgradeGuard v6. **Nexus Collection ещё не опубликована**, поэтому установка всей сборки в один клик пока недоступна.
+> **Статус: первая публичная ревизия (предварительный выпуск).** [Nexus Collection — Revision 1](https://www.nexusmods.com/games/mountandblade2bannerlord/collections/u4rv0m/revisions/1) опубликована как **Listed** и содержит **34 мода**. Чистая установка на другом ПК ещё не проверена. **UpgradeGuard v6 устанавливается отдельно и не входит в коллекцию.**
+
+### Установка через Nexus Mods
+
+**[Скачать коллекцию BERSERK: Black Swordsman — Revision 1](https://www.nexusmods.com/games/mountandblade2bannerlord/collections/u4rv0m/revisions/1)**
+
+Устанавливайте через Vortex. Перед началом проверьте версии игры и ознакомьтесь с [инструкцией](docs/INSTALL_RU.md) и [известной проблемой Vortex/BUTR](docs/VORTEX_DLL_ISSUE_RU.md). [UpgradeGuard v6](patches/UpgradeGuard_v6/) — отдельный экспериментальный патч, не включённый в коллекцию.
 
 ### Версии игры
 
@@ -44,10 +50,10 @@
 
 1. Версии модов берём из установленной папки игры, а не автоматически из Vortex staging. Например, в игре: **BetterBanditsPlus 9.8.2** и **ImprovedGarrisons 4.2.0.7**; в staging обнаружены папки с более новыми номерами.
 2. У **AutoTrader** в метаданных указана зависимость **CargoHolds**, которой нет среди 41 включённого модуля. Причину ещё предстоит проверить.
-3. Перед публикацией Nexus Collection необходимо проверить источники загрузки, лицензии модов, зависимости и установку с чистого профиля Vortex.
+3. После публикации Revision 1 ещё требуется проверить источники загрузки, зависимости и установку с чистого профиля Vortex; стабильность у других игроков пока не подтверждена.
 4. **UpgradeGuard v6 не входит в 34 мода коллекции Vortex.** Его исходники и локальный установщик размещены в [GitHub](patches/UpgradeGuard_v6/). Патч экспериментальный: установщик привязан к пути `C:\\Games\\Mount and Blade II Bannerlord` и точному SHA-256 игровой DLL, поэтому не является универсальной установкой в один клик.
 5. При установке через Vortex возможна отдельная [ошибка расширения BUTR](docs/VORTEX_DLL_ISSUE_RU.md): при неизвестном магазине игры DLL модов могут пропускаться. [Исходное обращение #196](https://github.com/BUTR/game-mount-and-blade2/issues/196).
-4. **Чужие моды и игровые DLL в репозиторий не включены.** Их следует скачивать из оригинальных источников.
+6. **Чужие моды и игровые DLL в репозиторий не включены.** Их следует скачивать из оригинальных источников.
 
 Это фанатский проект, не связанный официально с TaleWorlds или авторами *Berserk*.
 
@@ -61,7 +67,11 @@
 
 Focused on brutal melee combat, oversized swords, dismemberment, stronger bandits, large battles, sieges, and expanded party/kingdom gameplay.
 
-> **Status: pre-release.** This GitHub repository contains documentation, a manifest of the working local configuration, and the UpgradeGuard v6 patch source. **The Nexus Collection has not been published yet**, so there is no one-click installation at this time.
+> **Status: first public revision (pre-release).** [Nexus Collection — Revision 1](https://www.nexusmods.com/games/mountandblade2bannerlord/collections/u4rv0m/revisions/1) is published as **Listed** and contains **34 mods**. A clean installation on another PC has not yet been validated. **UpgradeGuard v6 is a separate patch and is not included.**
+
+### Nexus Mods collection
+
+**[Install BERSERK: Black Swordsman — Revision 1](https://www.nexusmods.com/games/mountandblade2bannerlord/collections/u4rv0m/revisions/1)** using Vortex. Check the required game versions and read the [Russian installation guide](docs/INSTALL_RU.md), [known Vortex/BUTR issue](docs/VORTEX_DLL_ISSUE_RU.md), and [optional experimental UpgradeGuard v6](patches/UpgradeGuard_v6/) instructions.
 
 ### Required game versions
 
@@ -91,7 +101,7 @@ The party screen previously crashed when a modded bandit upgrade attempted to ac
 
 **Known limitation:** an emergency upgrade-cost fallback of **1,000,000 gold** remains in the patch for unexpected indices and requires further review before a stable release. Compatibility with other game versions is not guaranteed.
 
-### Before a public Nexus Collection release
+### Remaining validation after the first public revision
 
 - Use the **installed game versions**, not newer staging-folder labels: **BetterBanditsPlus 9.8.2** and **ImprovedGarrisons 4.2.0.7** were observed in the game.
 - Investigate the **AutoTrader → CargoHolds** dependency recorded in XML but absent from the enabled module list.
