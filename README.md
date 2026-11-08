@@ -32,6 +32,7 @@
 - [**UpgradeGuard v6**](patches/UpgradeGuard_v6/) — исходный код, установщик и сбор диагностических логов.
 - [Инструкция по установке на русском](docs/INSTALL_RU.md).
 - [План публикации Nexus Collection](docs/NEXUS_COLLECTION.md).
+- [**Известная проблема Vortex/BUTR с пропадающими DLL (issue #196)**](docs/VORTEX_DLL_ISSUE_RU.md).
 
 ### Зачем нужен UpgradeGuard v6
 
@@ -44,6 +45,8 @@
 1. Версии модов берём из установленной папки игры, а не автоматически из Vortex staging. Например, в игре: **BetterBanditsPlus 9.8.2** и **ImprovedGarrisons 4.2.0.7**; в staging обнаружены папки с более новыми номерами.
 2. У **AutoTrader** в метаданных указана зависимость **CargoHolds**, которой нет среди 41 включённого модуля. Причину ещё предстоит проверить.
 3. Перед публикацией Nexus Collection необходимо проверить источники загрузки, лицензии модов, зависимости и установку с чистого профиля Vortex.
+4. **UpgradeGuard v6 не входит в 34 мода коллекции Vortex.** Его исходники и локальный установщик размещены в [GitHub](patches/UpgradeGuard_v6/). Патч экспериментальный: установщик привязан к пути `C:\\Games\\Mount and Blade II Bannerlord` и точному SHA-256 игровой DLL, поэтому не является универсальной установкой в один клик.
+5. При установке через Vortex возможна отдельная [ошибка расширения BUTR](docs/VORTEX_DLL_ISSUE_RU.md): при неизвестном магазине игры DLL модов могут пропускаться. [Исходное обращение #196](https://github.com/BUTR/game-mount-and-blade2/issues/196).
 4. **Чужие моды и игровые DLL в репозиторий не включены.** Их следует скачивать из оригинальных источников.
 
 Это фанатский проект, не связанный официально с TaleWorlds или авторами *Berserk*.
@@ -79,6 +82,7 @@ The configuration was exported from the actual local installation on **November 
 - [SHA-256 hashes of selected DLLs](manifest/critical-dll-sha256.csv).
 - [**UpgradeGuard v6**](patches/UpgradeGuard_v6/) — source, installer, and log collector.
 - [Russian installation guide](docs/INSTALL_RU.md).
+- [**Known Vortex/BUTR missing-DLL issue (GitHub #196, Russian guide)**](docs/VORTEX_DLL_ISSUE_RU.md).
 - [Nexus Collection publication checklist](docs/NEXUS_COLLECTION.md).
 
 ### UpgradeGuard v6
@@ -93,5 +97,7 @@ The party screen previously crashed when a modded bandit upgrade attempted to ac
 - Investigate the **AutoTrader → CargoHolds** dependency recorded in XML but absent from the enabled module list.
 - Validate original mod sources, permissions, dependencies, and a clean Vortex profile installation.
 - Do not redistribute third-party mod archives or game DLLs without permission.
+- **UpgradeGuard v6 is not included among the 34 Vortex collection mods.** Its [source and local installer](patches/UpgradeGuard_v6/) are on GitHub, but the installer is hard-coded to the author's game path and a specific game DLL SHA-256; it is **not** a universal one-click patch.
+- **Known Vortex/BUTR issue:** unknown game store detection can silently omit DLLs during mod installation. See [issue #196](https://github.com/BUTR/game-mount-and-blade2/issues/196) and [troubleshooting guide](docs/VORTEX_DLL_ISSUE_RU.md).
 
 This is an unofficial fan project, not endorsed by TaleWorlds or the creators of *Berserk*.
