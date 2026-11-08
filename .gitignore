@@ -1,0 +1,10 @@
+*.zip
+*.7z
+*.rar
+*.sav
+*.dll
+*.pdb
+*.log
+*.dmp
+state.v2
+.DS_Store
